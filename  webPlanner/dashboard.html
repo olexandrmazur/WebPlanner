@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebPlanner - Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h2>WebPlanner</h2>
+  <nav>
+    <a href="dashboard.html">Tasks</a>
+    <a href="calendar.html">Calendar</a>
+    <a href="profile.html">Profile</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <!-- LEFT: TASKS -->
+  <section class="tasks">
+    <h3>My Tasks</h3>
+
+    <div class="task" onclick="openTaskModal(1)">
+      <h4>Finish Math Homework</h4>
+      <p>Due: 2026-04-30</p>
+    </div>
+
+    <div class="task" onclick="openTaskModal(2)">
+      <h4>Read Java Chapter</h4>
+      <p>Due: 2026-05-01</p>
+    </div>
+
+    <button class="btn">+ Add Task</button>
+  </section>
+
+  <!-- RIGHT: NOTES -->
+  <section class="notes">
+    <h3>Quick Notes</h3>
+
+    <textarea placeholder="Write a note..."></textarea>
+    <button class="btn">Save Note</button>
+
+    <div class="note">
+      Remember to prepare for physics test
+    </div>
+  </section>
+
+</main>
+
+<!-- MODAL -->
+<div id="taskModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close" onclick="closeTaskModal()">×</span>
+
+    <h2 id="modalTitle">Task Title</h2>
+    <p id="modalDesc">Description...</p>
+    <p id="modalDate"></p>
+
+    <button class="btn">Edit</button>
+    <button class="btn danger">Delete</button>
+  </div>
+</div>
+
+<script src="js/modal.js"></script>
+</body>
+</html>
