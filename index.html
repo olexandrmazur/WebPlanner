@@ -190,12 +190,12 @@
         header.addEventListener('click', () => {
             const imgs = item.getElementsByClassName('accordionImg')[0]
             const isActive = item.classList.contains('active');
-            imgs.src = '../img/arrowDown.png'
+            imgs.src = 'img/arrowDown.png'
             items.forEach(i => i.classList.remove('active'));
 
             if (!isActive) {
                 item.classList.add('active');
-                imgs.src = '../img/arrowUp.png'
+                imgs.src = 'img/arrowUp.png'
             }
         });
     });
