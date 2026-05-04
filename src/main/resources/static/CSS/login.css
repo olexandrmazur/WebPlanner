@@ -1,0 +1,79 @@
+@import url('reset.css');
+@import url('litleThings.css');
+@import url('btn-and-input-for-login-and-code.css');
+@import url('footer.css');
+body {
+    font-family: Comfortaa;
+    font-weight: 300;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.log-in-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: left;
+    color: #3e6b38;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.or {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Кнопки */
+
+
+
+
+/* Кнопки соцмереж */
+.social-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #b9dcb0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.social-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-btn:hover {
+    border: 2px solid #294A2B;
+}
+
