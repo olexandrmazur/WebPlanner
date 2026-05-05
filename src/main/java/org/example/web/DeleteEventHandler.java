@@ -43,7 +43,7 @@ public class DeleteEventHandler implements HttpHandler {
 
             Event event = new Event();
             event.setId(eventId);
-            boolean isDeleted = EventService.deleteEvent(event);
+            boolean isDeleted = EventService.delteEvent(event);
             JsonObject responseJson = new JsonObject();
             responseJson.addProperty("isDeleted", isDeleted);
 

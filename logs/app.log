@@ -1,3 +1,10 @@
-10:32:03.121 [main] INFO  org.example.Dispatcher - Ura zarabotalo
-10:32:03.131 [main] INFO  org.example.util.Database - Підключено до SQLite!
-10:32:04.222 [main] INFO  org.example.Dispatcher - Server started on http://localhost:8080
+09:04:32.420 [main] INFO  org.example.Dispatcher - Ura zarabotalo
+09:04:32.456 [main] INFO  org.example.util.Database - Підключено до SQLite!
+09:04:34.607 [main] INFO  org.example.Dispatcher - Server started on http://localhost:8080
+09:07:28.879 [HTTP-Dispatcher] INFO  org.example.web.RegisterHandler - Request body: {"emailText":"m1a2abrams@gmail.com","passwordText":"12345678","nameText":"m1a2septuskIIIAbrams"}
+09:07:28.989 [HTTP-Dispatcher] INFO  org.example.web.RegisterHandler - Parsed emailText: m1a2abrams@gmail.com
+09:07:28.990 [HTTP-Dispatcher] INFO  org.example.web.RegisterHandler - Parsed passwordText: 12345678
+09:07:28.991 [HTTP-Dispatcher] INFO  org.example.web.RegisterHandler - Parsed nameText: m1a2septuskIIIAbrams
+09:07:29.251 [HTTP-Dispatcher] INFO  org.example.util.Database - Підключено до SQLite!
+09:07:32.342 [HTTP-Dispatcher] ERROR org.example.service.UserService - Помилка при створенні користувача: [SQLITE_BUSY] The database file is locked (database is locked)
+09:07:32.362 [HTTP-Dispatcher] INFO  org.example.util.Database - Підключено до SQLite!
